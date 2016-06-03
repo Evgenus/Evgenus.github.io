@@ -1,1 +1,94 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+<div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Kiev Mission Day completion'
+        },
+        xAxis: {
+            categories: [
+              "Bogdan Khmelnitsky Monument, Kyiv",
+              "Dynamo Stadium named after V. Lobanovskyi, Kyiv",
+              "Friendship of Nations Arch, Kyiv",
+              "Golden Gate of Kyiv",
+              "Grygoriy Skovoroda Monument, Kyiv",
+              "Holodomor Victims Monument, Kyiv",
+              "Kyiv Academic Puppet Theatre",
+              "Kyiv funicular",
+              "Kyiv Pechersk Lavra",
+              "Magdeburg Law Monument, Kyiv",
+              "Maidan Nezalezhnosti, Kyiv",
+              "Monument Eternal Glory to Unknown Soldiers, Kyiv",
+              "Monument Prince Volodymyr, Kyiv",
+              "Motherland Statue and War memorials, Kyiv",
+              "Mykhailo Hrushevsky Monument, Kyiv",
+              "National Bank of Ukraine, Kyiv",
+              "National Opera House of Ukraine, Kyiv",
+              "National Technical University of Ukraine, Kyiv",
+              "Peizazhna Alley, Kyiv",
+              "Petro Sahaidachny Monument, Kyiv",
+              "Pyrohoshcha Dormition Church, Kyiv",
+              "St. Andrew`s Church, Kyiv",
+              "St. Michael's Golden-Domed Monastery, Kyiv",
+              "St. Nicholas Roman Catholic Cathedral, Kyiv",
+              "St Sophia's Cathedral, Kyiv",
+              "St Volodymyr Church, Kyiv",
+              "Taras Shevchenko Monument, Kyiv",
+              "Taras Shevchenko National University of Kyiv",
+              "Termen fountains, Kyiv",
+              "The Fortress of Kyiv",
+              "The Monument to the Founders of Kyiv",
+              "The Statue of Princess Olha, Kyiv"
+            ],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Times completed',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' agents'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+        		enabled: false
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Completed',
+            data: [
+              585, 608, 586, 600, 376, 645, 619, 394, 525, 424, 532, 667, 447, 672, 549, 409, 586, 116, 398, 381, 380, 377, 621, 99, 313, 380, 528, 154, 543, 75, 276, 620
+            ]
+        }]
+    });
+});
+</script>
+</body>
+</html>
